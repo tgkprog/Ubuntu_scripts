@@ -1,0 +1,12 @@
+#nice to add to profile file 
+
+export y=/usr/local/bin/youtube-dl
+# export python=python3
+
+export JAVA8HOME=/usr/lib/jvm/java-8-openjdk-amd64
+#export JAVA_HOME=/usr/lib/jvm/jdk-13.0.1
+
+export JAVA_HOME=$JAVA8HOME
+export PATH=$JAVA_HOME/bin:$PATH
+
+#npm if u install it in user dir
