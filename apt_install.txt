@@ -1,0 +1,26 @@
+a text file is for reading, not to run directly like the sh guys
+
+sudo apt update #only gets meta data/ what has changed
+sudo apt upgrade -y #gets and installs! Wont bump to next version of Unu. That needs a parameter to this command.
+
+install a .deb file via the command line
+ 
+ sudo dpkg -i <path to file>
+ sudo apt install -fy
+ 
+ 
+ 
+ sudo apt update
+ sudo apt upgrade -y
+ 
+ 
+ ---
+ 
+  tar xvf openjdk-13*_bin.tar.gz
+
+in ~/.profile
+
+export JAVA_HOME=/usr/lib/jvm/jdk-13.0.1
+export PATH=$JAVA_HOME/bin:$PATH
+
+sudo apt install oracle-java13-set-default
