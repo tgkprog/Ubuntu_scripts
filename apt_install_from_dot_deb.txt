@@ -1,0 +1,26 @@
+ 
+ install a .deb file via the command line
+ 
+ sudo dpkg -i <path to file>
+ sudo apt install -fy
+ 
+ 
+ # get information of new bug fixes of OS and installed software (by apt)
+ 
+ 
+ 
+ sudo apt update
+ #does not change Ubuntu version, just gets latest OS bug fixes and installed software fixes
+ sudo apt upgrade -y
+ 
+ 
+ 
+ 
+ ---
+ 
+  tar xvf openjdk-13*_bin.tar.gz
+  
+  export JAVA_HOME=/usr/lib/jvm/jdk-13.0.1
+export PATH=$JAVA_HOME/bin:$PATH
+
+sudo apt install oracle-java13-set-default

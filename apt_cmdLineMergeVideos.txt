@@ -1,0 +1,12 @@
+sudo sh -c 'echo "deb https://www.bunkus.org/ubuntu/dists/focal/ ./" >> /etc/apt/sources.list.d/mkvtoolnix.list'
+
+
+sudo apt update
+
+sudo apt upgrade -y
+
+sudo apt install mkvtoolnix
+
+
+sudo apt install mkvtoolnix-gui
+

@@ -1,0 +1,5 @@
+	Create Symlink in Linux
+
+Terminal way (the link will appear in the folder the terminal points to):
+
+ln -s /folderorfile/link/will/point/to /name/of/the/link

@@ -1,0 +1,36 @@
+https://unix.stackexchange.com/questions/108782/pass-the-output-of-previous-command-to-next-as-an-argument
+
+You are confusing two very different types of inputs.
+
+    Standard input (stdin)
+    Command line arguments
+
+These are different, and are useful for different purposes. Some commands can take input in both ways, but they typically use them differently. Take for example the wc command:
+
+    Passing input by stdin:
+
+    ls | wc -l
+
+    This will count the lines in the output of ls
+
+    Passing input by command line arguments:
+
+    wc -l $(ls)
+
+    This will count lines in the list of files printed by ls
+
+Completely different things.
+
+To answer your question, it sounds like you want to capture the rate from the output of the first command, and then use the rate as a command line argument for the second command. Here's one way to do that:
+
+rate=$(command1 | sed -ne 's/^rate..\([0-9]*\)%.*/\1/p')
+command2 -t "rate was $rate"
+
+Explanation of the sed:
+
+    The s/pattern/replacement/ command is to replace some pattern
+    The pattern means: the line must start with "rate" (^rate) followed by any two character (..), followed by 0 or more digits, followed by a %, followed by the rest of the text (.*)
+    \1 in the replacement means the content of the first expression captured within \(...\), so in this case the digits before the % sign
+    The -n flag of the sed command means to not print lines by default. The p at the end of the s/// command means to print the line if there was a replacement. In short, the command will print something only if there was a match.
+
+

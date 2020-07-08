@@ -1,0 +1,32 @@
+#gets info
+sudo apt update
+
+#downlaods updates but does not go to next version of Ubuntu
+sudo apt upgrade -y
+
+sudo apt install -y curl
+
+
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
+---
+
+huh?
+
+I: The initramfs will attempt to resume from /dev/sda5
+I: (UUID=2086f7ef-580e-46f5-a804-05899c93ce07)
+I: Set the RESUME variable to override this.
+
+
+----
+
+sudo add-apt-repository ppa:gerardpuig/ppa
+$ sudo apt-get update
+$ sudo apt-get install ubuntu-cleaner
+---
+
+
+
+
