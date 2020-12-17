@@ -1,0 +1,8 @@
+
+#cut part of a video
+ffmpeg -ss 00:01:57  -i k.mp4  -to 00:0:32 -c copy  k2.mp4
+
+ffmpeg
+
+#convert webm to mp4
+ffmpeg -i ./k.webm -preset slow -crf 26  -movflags faststart -profile:v high -level 4.2  ./k.mp4

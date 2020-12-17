@@ -1,0 +1,26 @@
+nvm node version manager keeps differnt versions of node and npm at ~/.nvm/versions/ like ~/.nvm/versions/node/v14.15.0/bin
+Here ~ is home folder 
+
+ nvm install --lts
+
+nvm use --lts
+
+nvm --help
+
+#after that can use npm and node
+#sudo not required
+npm uninstall -g angular-cli @angular/cli
+
+npm cache verify 
+
+npm install -g @angular/cli
+
+
+You get an EADDR error (Address already in use)
+You might already have another ng serve process running - make sure to quit that or use ng serve --port ANOTHERPORT  to serve your project on a new port
+
+My changes are not reflected in the browser (App is not compiling)
+Check if the window running ng serve  displays an error. If that's not the case, make sure you're using the latest CLI version and try restarting your CLI
+
+
+
