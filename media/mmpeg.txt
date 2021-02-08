@@ -1,0 +1,39 @@
+Well, you still can use the trim filter for that. Here is an example, lets assume that you want to cut out segments 30-40 sec (10 sec) and 50-80 sec (30 sec):
+
+ffmpeg -i in.ts -filter_complex \
+"[0:v]trim=duration=30[a]; \
+ [0:v]trim=start=40:end=50,setpts=PTS-STARTPTS[b]; \
+ [a][b]concat[c]; \
+ [0:v]trim=start=80,setpts=PTS-STARTPTS[d]; \
+ [c][d]concat[out1]" -map [out1] out.ts
+What I did here? I trimmed first 30 sec, 40-50 sec and 80 sec to end, and then combined them into stream out1 with the concat filter.
+
+About setpts: we need this because trim does not modify picture display time, and when we cut out 10 sec decoder counter does not see any frames for this 10 sec.
+
+If you want to have audio too, You have to do the same for audio streams. So the command should be:
+
+loer quality n size
+ffmpeg -i PavementsTrafficSafetySeshadripuramCollegeBlr.mp4  -vcodec libx265 -crf 24  o.mp4
+
+copy parts to new
+ffmpeg -i utv.ts -filter_complex \
+"[0:v]trim=duration=30[av];[0:a]atrim=duration=30[aa];\
+ [0:v]trim=start=40:end=50,setpts=PTS-STARTPTS[bv];\
+ [0:a]atrim=start=40:end=50,asetpts=PTS-STARTPTS[ba];\
+ [av][bv]concat[cv];[aa][ba]concat=v=0:a=1[ca];\
+ [0:v]trim=start=80,setpts=PTS-STARTPTS[dv];\
+ [0:a]atrim=start=80,asetpts=PTS-STARTPTS[da];\
+ [cv][dv]concat[outv];[ca][da]concat=v=0:a=1[outa]" -map [outv] -map [outa] out.ts
+ 
+ 
+ 
+ 00-1:55
+ 2:14-
+ 
+ ffmpeg -i 2.mp4 -filter_complex \
+"[0:v]trim=duration=115[av];[0:a]atrim=duration=115[aa];\
+ [0:a]atrim=start=134,asetpts=PTS-STARTPTS[da];\
+  [0:v]trim=start=134,setpts=PTS-STARTPTS[dv];\
+ [av][dv]concat[outv];[aa][da]concat=v=0:a=1[outa]" -map [outv] -map [outa] out.mp4
+ 
+ 
