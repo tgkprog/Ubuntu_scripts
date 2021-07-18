@@ -1,0 +1,14 @@
+chmod go-rwx /home/tushar/<file>
+
+The "g" is for group
+The "o" is for others
+The "-" is for removing permissions
+The "r" is for read-permission
+The "w" is for write-permission
+The "x" is for execute permission.
+
+chmod 600 filename will do it; or chmod 700 if it is an executable.
+
+chmod 600 filename will do it; or chmod 700 if it is an executable.
+
+
