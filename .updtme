@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo apt update
+
+echo
+echo "upgradable ? :"
+sudo apt list --upgradable
+echo
+echo
+read -t 15 -p "Press enter to continue to upgrade? Or Ctrl -C to cancel. wait for upto 15 seconds then apt upgrade -y anyway"
+echo
+sudo apt upgrade -y
