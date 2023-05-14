@@ -1,1 +1,4 @@
-find .  -type f -exec sh /home/t/prog/ubu/Ubuntu_scripts/misc/geberalBashScripts/echo1.sh {} \;
+
+#find /folder -iname '*.JPG' -exec convert \{} -verbose -set filename:base "%[basename]" -resize 1920x1080\> "/folder/images/%[filename:base].JPG" \;
+
+find .  -type f -exec sh ./Ubuntu_scripts/misc/geberalBashScripts/echo1.sh {} \;
