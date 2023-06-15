@@ -1,37 +1,38 @@
 sudo apt install gnome-clocks
 
-    sudo apt install gnome-tweaks -y
-   sudo apt install ffmpeg -y
-   sudo apt install vlc -y
-    sudo apt install gparted
-    sudo apt install simplescreenrecorder
-    sudo apt install git
-   39  sudo apt install -fy
-sudo apt install vlc
-sudo apt-get install gparted
-sudo apt install simplescreenrecorder
-sudo apt install git
+sudo apt install gnome-tweaks -y
+sudo apt install ffmpeg -y
+sudo apt install vlc -y
+sudo apt install gparted -y
+sudo apt install simplescreenrecorder -y
+sudo apt install git -y
 sudo apt install -fy
- 
-sudo apt install hibernate
-sudo apt install gimp
-sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
-sudo apt install curl
- 
-sudo apt install unity-tweak-tool
- 
+
+
+
+
+
+sudo apt install hibernate -y
+sudo apt install gimp -y
+sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
+sudo apt install curl -y
+
+#ruby gems, lots of deps
+#sudo apt install unity-tweak-tool -y
+
 sudo apt install -y curl
 sudo apt install -y videolan
 sudo apt install -y kate
- 
-sudo apt install -y franz
- 
- 
-sudo apt install xtitle
- 
-sudo apt install python3
-sudo apt install openjdk-8-jdk
- 
-sudo apt install build-essential
 
-sudo apt-get install whois
+sudo apt install -y franz
+
+
+sudo apt install xtitle -y
+
+sudo apt install python3 -y
+sudo apt install openjdk-8-jdk -y
+
+#sudo apt install build-essential -y
+
+sudo apt-get install whois -y
+sudo apt autoremove #-y
