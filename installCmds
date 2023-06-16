@@ -1,3 +1,5 @@
+# sudo snap  install code  --classic
+
 sudo apt install gnome-clocks
 
 sudo apt install gnome-tweaks -y
@@ -17,6 +19,8 @@ sudo apt install gimp -y
 sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
 sudo apt install curl -y
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
 #ruby gems, lots of deps
 #sudo apt install unity-tweak-tool -y
 
@@ -30,6 +34,14 @@ sudo apt install -y franz
 sudo apt install xtitle -y
 
 sudo apt install python3 -y
+sudo apt install python2 -y
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+#export y=/usr/local/bin/youtube-dl
+
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
+sudo ln -s /usr/bin/python2 /usr/bin/python
+
 sudo apt install openjdk-8-jdk -y
 
 #sudo apt install build-essential -y
