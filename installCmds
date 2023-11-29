@@ -16,15 +16,16 @@ sudo apt install -fy
 
 sudo apt install hibernate -y
 sudo apt install gimp -y
-sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
+# not needed Nov 2023 sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y
 sudo apt install curl -y
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+# in new terminal `command nvm` then `nvm install node`
 
 #ruby gems, lots of deps
 #sudo apt install unity-tweak-tool -y
 
-sudo apt install -y curl
+#sudo apt install -y curl
 sudo apt install -y videolan
 sudo apt install -y kate
 
