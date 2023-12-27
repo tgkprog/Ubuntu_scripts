@@ -1,38 +1,81 @@
-from history, some might be errors. needs filtering
+ sudo apt install synaptic
+ sudo apt install gnome-tweaks
+ sudo apt install ffmpeg -y
+ sudo apt install vlc
+ sudo apt-get install gparted
+ sudo apt install simplescreenrecorder
+ sudo apt install git
+ sudo apt install -fy
+ sudo apt update && sudo apt install mkvtoolnix-gui
+ sudo apt install mencoder
+ sudo apt install hibernate
+ sudo apt install gimp
+ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+ sudo apt install curl
+ sudo apt install curl
+ sudo apt install unity-tweak-tool
+ sudo apt install -y blender
+ sudo apt install -y curl
+ sudo apt install -y videolan
+ sudo apt install -y kate
+ sudo apt install -y vlc
+ sudo apt install -y franz
+ sudo apt install -y synaptic
+ sudo apt install -y vb
+ sudo apt install -y virtualbox
+ sudo apt install xtitle
+ cd sudo apt install xtitle
+ sudo apt install python
+ sudo apt install openjdk-8-jdk
+ sudo apt install -y nodejs
+ sudo apt install build-essential
+ sudo apt-get install ppa-purge
+ sudo apt-get update && sudo apt-get install yarn
+ sudo apt-get install whois
+ history | grep "sudo apt" | grep "install"
+ history | grep "sudo apt" | grep "install" >./Documents/a/in 
+ awk '{$1 = ""; print $0;}' ./Documents/a/in >./Documents/a/out
+ history | grep "sudo apt" | grep "install" |   awk '{$1 = ""; print $0;}' 
 
-    7  sudo apt install synaptic
-    8  sudo apt install gnome-tweaks
-    9  sudo apt install ffmpeg -y
-   12  sudo apt install vlc
-   13  sudo apt-get install gparted
-   19  sudo apt install simplescreenrecorder
-   20  sudo apt install git
-   39  sudo apt install -fy
-   41  sudo apt update && sudo apt install mkvtoolnix-gui
-   45  sudo apt install mencoder
-   48  sudo apt install hibernate
-   57  sudo apt install gimp
-   59  sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
-   91  sudo apt install curl
-   95  sudo apt install curl
-   99  sudo apt install unity-tweak-tool
-  100  sudo apt install -y blender
-  101  sudo apt install -y curl
-  102  sudo apt install -y videolan
-  103  sudo apt install -y kate
-  104  sudo apt install -y vlc
-  105  sudo apt install -y franz
-  106  sudo apt install -y synaptic
-  107  sudo apt install -y vb
-  108  sudo apt install -y virtualbox
-  122  sudo apt install xtitle
-  128  cd sudo apt install xtitle
-  152  sudo apt install python
-  154  sudo apt install openjdk-8-jdk
-  183  sudo apt install -y nodejs
-  185  sudo apt install build-essential
-  190  sudo apt-get install ppa-purge
-  205  sudo apt-get update && sudo apt-get install yarn
-  217  sudo apt-get install whois
-  219  history | grep "sudo apt" | grep "install"
-  220  history | grep "sudo apt" | grep "install" >/d/prog/...UbuntuScripts/aptInstallCmdsAll.txt
+
+####
+
+
+ sudo apt install synaptic
+ sudo apt install gnome-tweaks
+ sudo apt install ffmpeg -y
+ sudo apt install vlc
+ sudo apt-get install gparted
+ sudo apt install simplescreenrecorder
+ sudo apt install git
+ sudo apt install -fy
+ sudo apt update && sudo apt install mkvtoolnix-gui
+ sudo apt install mencoder
+ sudo apt install hibernate
+ sudo apt install gimp
+ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+ sudo apt install curl
+ sudo apt install curl
+ sudo apt install unity-tweak-tool
+ sudo apt install -y blender
+ sudo apt install -y curl
+ sudo apt install -y videolan
+ sudo apt install -y kate
+ sudo apt install -y vlc
+ sudo apt install -y franz
+ sudo apt install -y synaptic
+ sudo apt install -y vb
+ sudo apt install -y virtualbox
+ sudo apt install xtitle
+ cd sudo apt install xtitle
+ sudo apt install python
+ sudo apt install openjdk-8-jdk
+ sudo apt install -y nodejs
+ sudo apt install build-essential
+ sudo apt-get install ppa-purge
+ sudo apt-get update && sudo apt-get install yarn
+ sudo apt-get install whois
+ history | grep "sudo apt" | grep "install"
+ history | grep "sudo apt" | grep "install" >./Documents/a/in 
+ awk '{$1 = ""; print $0;}' ./Documents/a/in >./Documents/a/out
+ history | grep "sudo apt" | grep "install" |   awk '{$1 = ""; print $0;}' 
