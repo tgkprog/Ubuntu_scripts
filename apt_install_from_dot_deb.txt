@@ -13,7 +13,11 @@
  
  sudo apt upgrade -y # updates packages but not Ubuntu version, only installed drivers and software installed via apt
  
- 
+ --
+Get new version of Google Chrome 
+
+sudo apt update
+sudo apt install --only-upgrade google-chrome-stable
  
  
  ---
